@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+input, button {
+    font-family: inherit;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 120px; 
+    padding: 16px 0; 
+    height: 76px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    position: relative;
+    z-index: 2;
+}
+
+.logo {
+    height: 32px;
+    width: auto;
+}
+
+.menu {
+    display: flex;
+    gap: 32px;
+}
+
+.menu a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center bottom;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.hero-container {
+    width: 100%;
+}
+
+.hero-content {
+    position: absolute;
+    top: 140px; 
+    left: 117px; 
+    width: 792px; 
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-weight: 600;
+    font-size: 66px; 
+    line-height: 70px; 
+    letter-spacing: 0; 
+    color: #FFFFFF;
+    margin: 0 0 16px 0;
+}
+
+.hero-content p {
+    font-weight: 400;
+    font-size: 33px;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin: 0 0 16px 0;
+}
+
+.catalog-btn {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    color: #FFFFFF;
+    text-decoration: underline;
+    display: inline-block;
+}
+
+.catalog {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    background: #FFFFFF;
+}
+
+.catalog h2 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 100%;
+    color: #000000;
+    margin-bottom: 48px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0 0 7px 0;
+}
+
+.description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #888888;
+    margin: 0 0 13px 0;
+}
+
+.price {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    color: #050505;
+    margin: 0;
+}
+
+footer {
+    padding: 30px 0;
+    background: #F7F6F6;
+    text-align: center;
+}
